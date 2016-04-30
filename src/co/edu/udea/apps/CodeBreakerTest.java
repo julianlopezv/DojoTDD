@@ -18,9 +18,23 @@ public class CodeBreakerTest {
 	}
 	
 	@Test
-	public void adivinar1234() {
+	public void adivinar6721() {
 		CodeBreaker c = new CodeBreaker();
 		String r = c.adivinar(6721);
+		assertEquals("X",r);
+	}
+	
+	@Test
+	public void adivinar6782() {
+		CodeBreaker c = new CodeBreaker();
+		String r = c.adivinar(6782);
+		assertEquals("X",r);
+	}
+	
+	@Test
+	public void adivinar4762() {
+		CodeBreaker c = new CodeBreaker();
+		String r = c.adivinar(4762);
 		assertEquals("X",r);
 	}
 }

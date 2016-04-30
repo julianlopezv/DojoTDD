@@ -1,17 +1,18 @@
 package co.edu.udea.app;
 
 public class CodeBreaker {
-	public String adivinar(int numeroAdivinar){
+	private final int numeroSecreto = 4381;
+	
+	public String adivinar(int numeroIngresado){
 		String respuesta="";
-		int objetivo= 4381;
-		int ultDigito = numeroAdivinar % 10;
-		int target = 4381 % 10;
-		if(objetivo==numeroAdivinar){
-			respuesta= "XXXX";
-		}
+		int objetivo = numeroSecreto;
+		int numero = numeroIngresado;
 		
-		else if(ultDigito==target){
-			respuesta="X";
+		for(int i =0 ; i<4; i++){
+			if(numero % 10 == objetivo % 10)
+				respuesta += "X";
+			objetivo /= 10;
+			numero /= 10;
 		}
 		return respuesta;
 	}
