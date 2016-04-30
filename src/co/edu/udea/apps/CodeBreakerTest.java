@@ -8,47 +8,45 @@ import co.edu.udea.app.CodeBreaker;
 
 public class CodeBreakerTest {
 
+	CodeBreaker c = new CodeBreaker();
+	String r;
 	
 	//adivinar 4381
 	@Test
 	public void adivinar4381() {
-		CodeBreaker c = new CodeBreaker();
-		String r = c.adivinar(4381);
+		r = c.adivinar(4381);
 		assertEquals("XXXX",r);
 	}
 	
 	@Test
 	public void adivinar6721() {
-		CodeBreaker c = new CodeBreaker();
-		String r = c.adivinar(6721);
+		r = c.adivinar(6721);
 		assertEquals("X",r);
 	}
 	
 	@Test
 	public void adivinar6782() {
-		CodeBreaker c = new CodeBreaker();
-		String r = c.adivinar(6782);
+		r = c.adivinar(6782);
 		assertEquals("X",r);
 	}
 	
 	@Test
 	public void adivinar4762() {
-		CodeBreaker c = new CodeBreaker();
-		String r = c.adivinar(4762);
+		r = c.adivinar(4762);
 		assertEquals("X",r);
 	}
 	
 	@Test
 	public void adivinar4782() {
-		CodeBreaker c = new CodeBreaker();
-		String r = c.adivinar(4782);
+		r = c.adivinar(4782);
 		assertEquals("XX",r);
 	}
 	
 	@Test
 	public void adivinar1438() {
-		CodeBreaker c = new CodeBreaker();
-		String r = c.adivinar(1438);
+		r = c.adivinar(1438);
 		assertEquals("____",r);
 	}
+	
+	
 }
