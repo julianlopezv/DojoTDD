@@ -11,6 +11,8 @@ public class CodeBreaker {
 		for(int i =0 ; i<4; i++){
 			if(numero % 10 == objetivo % 10)
 				respuesta += "X";
+			else
+				respuesta += "_";
 			objetivo /= 10;
 			numero /= 10;
 		}

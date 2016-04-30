@@ -37,4 +37,18 @@ public class CodeBreakerTest {
 		String r = c.adivinar(4762);
 		assertEquals("X",r);
 	}
+	
+	@Test
+	public void adivinar4782() {
+		CodeBreaker c = new CodeBreaker();
+		String r = c.adivinar(4782);
+		assertEquals("XX",r);
+	}
+	
+	@Test
+	public void adivinar1438() {
+		CodeBreaker c = new CodeBreaker();
+		String r = c.adivinar(1438);
+		assertEquals("____",r);
+	}
 }
