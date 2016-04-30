@@ -48,5 +48,11 @@ public class CodeBreakerTest {
 		assertEquals("____",r);
 	}
 	
+	@Test
+	public void adivinar4318() {
+		r = c.adivinar(1438);
+		assertEquals("XX__",r);
+	}
+	
 	
 }
