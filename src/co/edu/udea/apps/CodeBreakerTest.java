@@ -9,7 +9,7 @@ import co.edu.udea.app.CodeBreaker;
 public class CodeBreakerTest {
 
 	
-	//adivinar 1234
+	//adivinar 4381
 	@Test
 	public void adivinar4381() {
 		CodeBreaker c = new CodeBreaker();
@@ -20,7 +20,7 @@ public class CodeBreakerTest {
 	@Test
 	public void adivinar1234() {
 		CodeBreaker c = new CodeBreaker();
-		String r = c.adivinar(1234);
-		assertEquals("___",r);
+		String r = c.adivinar(6721);
+		assertEquals("X",r);
 	}
 }
